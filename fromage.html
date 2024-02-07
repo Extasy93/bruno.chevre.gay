@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="assets\css\fromage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>La ferme de Bruno - Fromage</title>
+</head>
+
+<body>
+    <div name="title" class="title_blian">
+        <a href="home.html">
+            <img class="imgRetour" src="assets\img\retour.png" alt="retour">
+        </a>
+        <h1>Mes Fromages en vente cette semaine</h1>
+    </div>
+
+    <asidetel class="tri-filtre-bar-tel">
+        <label class="label_tri" for="sort">Trier par</label>
+        <select onchange="filtrerEtTrier(event)" id="triSelect">
+            <option selected value="alpha">Alpabetique</option>
+            <option value="note">Notation</option>
+            <option value="date">Date</option>
+            <option value="prix">prix</option>
+        </select>
+        <div>
+            <label class="label_filter" for="filter">Note supérieure à<input type="number" id="filter"
+                    placeholder="3"><button id="filter-button">Filtrer</button></label>
+        </div>
+    </asidetel>
+
+    <main>
+        <aside class="tri-menu">
+            <label class="label_tri" for="sort">Trier par</label>
+            <select onchange="filtrerEtTrier(event)" id="triSelect">
+                <option selected value="alpha">Alpabetique</option>
+                <option value="note">Notation</option>
+                <option value="date">Date</option>
+                <option value="prix">prix</option>
+            </select>
+            <div>
+                <label class="label_filter" for="filter-resp">Note supérieure à</label>
+                <input type="number" id="filter-resp" placeholder="3">
+                <button id="filter-button-resp">Filtrer</button>
+            </div>
+        </aside>
+
+        <div class="separator"></div>
+
+        <div class="articlesContainer" id="articlesContainer">
+            <div class="article" data-date="2023-01-03" data-price="20" data-note="5">
+                <a>Plateau Gourmand</a>
+                <p>Un assortiment de fromages de diverses textures et saveurs, soigneusement sélectionnés pour offrir
+                    une expérience gustative variée et satisfaisante.</p>
+                <span class="price" data-price="20">20€ TTC</span>
+                <span class="note" data-note="5">Noté 5/10</span>
+                <img src="assets/img/fromages/1.jpg" alt="Image 2">
+            </div>
+
+            <div class="article" data-date="2023-01-02" data-price="30" data-note="3">
+                <a>Tomme de Brebis</a>
+                <p>Un fromage à pâte pressée non cuite, fabriqué à partir de lait de brebis. Il offre une saveur riche
+                    et légèrement fruitée, avec une texture lisse et crémeuse.</p>
+                <span class="price" data-price="30">30€ TTC</span>
+                <span class="note" data-note="3">Noté 3/10</span>
+                <img src="assets/img/fromages/fromage-chevre_istock.jpg" alt="Image 3">
+            </div>
+
+            <div class="article" data-date="2023-01-04" data-price="25" data-note="6">
+                <a>Rocamadour</a>
+                <p>Un fromage de chèvre à pâte molle et à croûte naturelle, originaire de la région de Rocamadour en
+                    France. Il a une texture crémeuse et une saveur subtilement acidulée avec des notes de noisette.</p>
+                <span class="price" data-price="25">25€ TTC</span>
+                <span class="note" data-note="6">Noté 6/10</span>
+                <img src="assets/img/fromages/fromage-de-chevre-AdobeStock_175740977.jpg"
+                    alt="Livre elle m'a quitté pour un autre">
+            </div>
+
+            <div class="article" data-date="2024-01-12" data-price="30" data-note="10">
+                <a>Buche de chêvre cendrée</a>
+                <p>Un fromage de chèvre à pâte molle et à croûte cendrée, souvent en forme de bûche. Il a une texture
+                    veloutée et un goût légèrement salé, avec des nuances terreuses et de fumée.</p>
+                <span class="price" data-price="30">30€ TTC</span>
+                <span class="note" data-note="10">Noté 10/10</span>
+                <img src="assets/img/fromages/fromage-pur-chevre-fermier-affine-le-bienvenu.jpg" alt="Berlingo">
+            </div>
+
+            <div class="article" data-date="2024-01-13" data-price="15" data-note="7">
+                <a>Bleu de chèvre</a>
+                <p>Un fromage bleu à base de lait de chèvre, caractérisé par ses veines bleu-vert. Il a une texture
+                    crémeuse et fondante avec une saveur robuste et piquante.</p>
+                <span class="price" data-price="15">15€ TTC</span>
+                <span class="note" data-note="7">Noté 7/10</span>
+                <img src="assets/img/fromages/Bleu_de_chevre.jpg" alt="Fœtus de Jul lors du clip Ovnis">
+            </div>
+
+            <div class="article" data-date="2024-01-14" data-price="4" data-note="9">
+                <a>Chèvre frais fleuri</a>
+                <p>Un fromage de chèvre frais, jeune et tendre, souvent aromatisé avec des herbes fraîches ou des fleurs
+                    comestibles. Il a une texture onctueuse et une saveur délicate et légèrement acidulée.</p>
+                <span class="price" data-price="4">4€ TTC</span>
+                <span class="note" data-note="9">Noté 9/10</span>
+                <img src="assets/img/fromages/fromage1.jpg" alt="Masque de chien">
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+<script src="assets\js\fromage.js"></script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Dev par Antoine Rodrigues - contact@antoinerodrigues.com -->
